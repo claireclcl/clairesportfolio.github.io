@@ -1,0 +1,354 @@
+* 
+{
+	box-sizing: border-box;
+}
+
+html 
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(50, 50, 50);
+    margin: 0%;
+}
+
+h1
+{
+    color: rgb(50, 50, 50);
+    font-size: 6rem;
+    text-align: center;
+    /**border-left: 0.5rem solid rgb(255, 215, 74);**/
+    font-family: 'Roboto Slab', serif;
+}
+
+h2
+{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    text-align: center;
+    /**border-left: 0.5rem solid rgb(255, 215, 74);**/
+    margin-top: 3rem;
+}
+
+h3
+{
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+}
+
+p
+{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1.25rem;
+}
+
+.p-style
+{
+    text-align: center;
+}
+
+img
+{
+    width: 100%;
+	height: auto;
+}
+
+.styled-ol
+{
+    list-style-type: none;
+    color: white;
+}
+
+/** Top Menu + Title of Home Page **/
+/** References: 
+    https://codepen.io/sreisner/pen/yOOOjx?editors=1100 
+    https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav
+**/
+.top-nav-bar
+{
+    overflow: hidden;
+    display: block;
+    background-color: rgb(252, 226, 219);
+    width: 100%;
+    text-align: right;
+    padding-right: 4rem;
+    padding-top: 1rem;
+}
+
+.top-nav-bar a
+{
+    display: inline-block;
+}
+
+.top-nav-button-style
+{
+    position: relative;
+    color: rgb(50, 50, 50);
+    font-size: 1.2rem;
+    text-decoration: none; 
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    opacity: 0.75;
+    font-weight: bold;
+    padding: 1.25rem 0;
+    margin: 0 1.25rem;
+}
+
+.top-nav-button-style:hover
+{
+    opacity: 1;
+    color: rgb(185, 136, 173);
+}
+
+.top-nav-button-style::before
+{
+    transition: 0.3s;
+    height: 0.1rem;
+    width: 100%;
+    content: "";
+    position: absolute;
+    background-color: rgb(185, 136, 173);
+}
+
+.top-nav-button-style::before
+{
+    width: 100%;
+    bottom: 0.313rem;
+    opacity: 0;
+}
+
+.top-nav-button-style:hover::before
+{
+    bottom: 0.625rem;
+    opacity: 1;
+}
+
+.add-white-text
+{
+    color: rgb(247, 238, 244)
+}
+
+.light-pink-container
+{
+    overflow: hidden;
+    background-color: rgb(252, 226, 219);
+    width: 100%;
+}
+.pink-container
+{
+    overflow: hidden;
+    background-color: rgb(185, 136, 173);
+    width: 100%;
+}
+
+.darker-pink-container
+{
+    overflow: hidden;
+    background-color: rgb(113, 97, 122);
+    width: 100%;
+}
+
+/** Design Images **/
+/** References: 
+    https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery
+    https://blog.hubspot.com/website/center-an-image-in-html#:~:text=Step%201%3A%20Wrap%20the%20image,to%20a%20fixed%20length%20value.
+**/
+
+.figure-container
+{
+    position: relative;
+    display: inline-block;
+    border: 0.2rem solid rgb(72, 48, 139);
+    max-width: 100%;
+    height: auto;
+}
+
+.center-img
+{
+    text-align: center;
+}
+
+.link-img
+{
+    font-size: 1rem;
+    text-decoration: none; 
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    max-width: 100%;
+	height: auto;
+    font-size: 1.5rem;
+}
+
+.figure-container:hover, .figure-container:focus
+{
+    border: 0.2rem solid rgb(255, 215, 74); 
+}
+
+.overlay
+{
+    background-color: rgb(255, 215, 74);
+	min-height: 2rem;
+	min-width: 2rem;
+	opacity: 1;
+	transition: opacity 0.5s;
+	position: absolute;
+	top: 0rem;
+	bottom: 0rem;
+	left: 0rem;
+	right: 0rem;
+    opacity: 0;
+}
+
+.overlay:hover
+{
+    opacity: 0.5;
+}
+
+.add-white
+{
+    color: white;
+}
+
+/** Buttons on Purple **/
+.button-style
+{
+    display: inline-block;
+    color: white;
+    background-color: rgb(72, 48, 139);
+    border-style: solid;
+    border-width: 0.2rem;
+    font-size: 1.5rem;
+    text-decoration: none; 
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out; 
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.button-style:hover, .button-style:focus
+{
+    color: rgb(255, 215, 74);
+    border-style: solid;
+}
+
+/** Buttons on White **/
+.button-style-purple
+{
+    display: inline-block;
+    color: rgb(72, 48, 139);
+    background-color: white;
+    border-style: solid;
+    border-width: 0.2rem;
+    font-size: 1rem;
+    text-decoration: none; 
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out; 
+    opacity: 0.75;
+    margin-left: 6rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.button-style-purple:hover, .button-style-purple:focus
+{
+    color: rgb(72, 48, 139);
+    border-style: solid;
+    opacity: 1; 
+}
+
+/** Bottom nav menu **/
+/** Same as top menu - different colours **/
+.bottom-nav-button
+{
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none; 
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    opacity: 0.75;
+    text-align: center;
+    padding: 1rem 0;
+    padding-left: 2rem;
+}
+
+.bottom-nav-button:hover
+{
+    opacity: 1;
+    color: white;
+}
+
+.bottom-nav-button::before
+{
+    transition: 0.3s;
+    height: 0.1rem;
+    width: 100%;
+    content: "";
+    position: absolute;
+    background-color: white;
+}
+
+.bottom-nav-button::before
+{
+    width: 100%;
+    bottom: 0.313rem;
+    opacity: 0;
+}
+
+.bottom-nav-button:hover::before
+{
+    bottom: 0.625rem;
+    opacity: 1;
+}
+
+.space
+{
+    padding-top: 2rem;
+}
+
+/** Grids **/
+.grid-container
+{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.grid-item, .grid-item-special
+{
+    padding: 1rem;
+}
+
+.grid-item-nav
+{
+    grid-column: span 3;
+}
+
+.column 
+{
+    float: left;
+    padding: 0.3rem;
+}  
+
+@media screen and (max-width: 37.5rem) 
+{
+    .grid
+    {
+        grid-template-columns: auto;
+    }
+
+    .grid-item-nav
+    {
+        grid-column: span 2;
+    }
+}
