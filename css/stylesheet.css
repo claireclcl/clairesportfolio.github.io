@@ -78,6 +78,7 @@ img
     display: block;
     background-color: rgb(252, 226, 219);
     width: 100%;
+    position: fixed;
     text-align: right;
     padding-right: 4rem;
     padding-top: 1rem;
@@ -166,7 +167,7 @@ img
 {
     position: relative;
     display: inline-block;
-    border: 0.2rem solid rgb(72, 48, 139);
+    border: 0.2rem solid rgb(113, 97, 122);
     max-width: 100%;
     height: auto;
 }
